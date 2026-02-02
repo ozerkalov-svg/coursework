@@ -1,15 +1,87 @@
 <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer-main">
+      <div>
+        <a aria-label="main" class="logo" href="/coursework/index.html">
+          <svg class="logo-icon" width="132" height="24">
+            <use href="/coursework/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="social-media-list">
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-main-group">
+        <h2 class="title-text">Transforming your<span> body</span> shape with us</h2>
+        <form
+          class="footer-subscribe-form"
+          autocomplete="off"
+          id="subscriptionForm"
+        >
+          <label for="footer-input">
+            Subscribe and learn about new exercises!
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="footer-input"
+              id="footer-input"
+            />
+          </label>
+          <button
+            name="send-email"
+            type="submit"
+            class="footer-send-button"
+            disabled
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <ul class="bottom-text-container">
+      <li><p class="bottom-text">Your Energy. All rights reserved.</p></li>
+      <li><p class="bottom-text bottom-text-second">Privacy Policy / Terms of Service</p></li>
+      <li><p class="bottom-text bottom-text-last">©2023</p></li>
+    </ul>
   </div>
 </footer>

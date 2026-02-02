@@ -1,44 +1,185 @@
-.header {
-  padding: 20px 0;
+.header .social-media-icon {
+  stroke: var(--black-color);
+  opacity: 80%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--black-10);
+  box-sizing: content-box;
 }
-.nav {
+.header .logo-icon {
+  stroke: var(--black-color);
+}
+
+.header {
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 0px;
+}
+.header .header-row {
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
 }
-.nav-list {
+
+.header .nav-link.active {
+  padding: 6px 12px;
+  background-color: var(--white-color);
+  color: #242424;
+  border-radius: 30px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header .nav-link {
+  padding: 6px 12px;
+  background-color: transparent;
+  color: var(--white-color);
+}
+.header .nav-list {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 265px;
+  height: 52px;
+
+  background-color: var(--black-color);
+  border-radius: 60px;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.header .social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.header .open-mobile-menu-btn {
+  display: none;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.mobile-menu-wrapper {
+  display: none;
+  width: 0;
+  height: 0;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+@media (max-width: 767px) {
+  .header .social-media-list {
+    display: none;
+  }
+  .header .nav {
+    display: none;
+  }
+
+  .header {
+    padding: 28px 0 0 0;
+  }
+
+  .header .open-mobile-menu-btn {
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header .icon-mobile-nav {
+    stroke: var(--black-color);
+  }
+  .mobile-menu-wrapper {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(110%);
+  }
+
+  .mobile-menu-wrapper.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+
+
+  .mobile-menu-wrapper .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 210px;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: var(--black-color);
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-menu-wrapper .mobile-menu-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  .mobile-menu-wrapper .close-mobile-menu-btn {
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    padding: 4px;
+  }
+
+  .mobile-menu-wrapper .icon-mobile-menu-nav {
+    stroke: var(--white-color);
+  }
+
+  .mobile-menu-wrapper .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 60px;
+    color: var(--white-color);
+  }
+
+  .mobile-menu-wrapper .nav-link {
+    display: block;
+    border-radius: 30px;
+    line-height: 1.5;
+  }
+
+  .mobile-menu-wrapper .mobile-social-media-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .mobile-menu-wrapper .social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: var(--white-color);
+    fill: var(--white-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid var(--black-10);
+  }
+
 }

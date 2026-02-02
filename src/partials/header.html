@@ -1,19 +1,157 @@
 <header class="header">
-  <div class="container">
+  <div class="container header-row">
+    <a aria-label="main" class="logo" href="/coursework/index.html">
+      <svg class="logo-icon" width="132" height="24">
+        <use href="/coursework/symbol-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        <li class="nav-list-item">
+          <a
+            aria-label="home"
+            class="nav-link header-nav-link header-nav-link-main"
+            id="homeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="nav-list-item">
+          <a
+            aria-label="favorites"
+            class="nav-link header-nav-link header-nav-link-favorites"
+            id="favoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
         </li>
       </ul>
     </nav>
+
+    <ul class="social-media-list">
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="open-mobile-menu-btn" type="button" name="Open menu" aria-label="Open menu">
+      <svg class="icon-mobile-nav" width="32" height="32">
+        <use href="/coursework/symbol-defs.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
+
+<div class="mobile-menu-wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <button class="close-mobile-menu-btn" type="button" name="close">
+        <svg class="icon-mobile-menu-nav" width="24" height="24">
+          <use href="/coursework/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav>
+      <ul class="mobile-nav-list">
+        <li>
+          <a
+            aria-label="home"
+            class="nav-link active"
+            id="mobileHomeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="favorites"
+            class="nav-link"
+            id="mobileFavoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="mobile-social-media-list">
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

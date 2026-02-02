@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/coursework/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <noscript>
+    </noscript>
+    <script type="module" crossorigin src="/coursework/assets/vendor-Bv82aGDC.js"></script>
+    <script type="module" crossorigin src="/coursework/assets/exercises_card-Crdpmkkp.js"></script>
+    <link rel="stylesheet" crossorigin href="/coursework/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/coursework/assets/exercises_card-C1G_fpco.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-row">
+    <a aria-label="main" class="logo" href="/coursework/index.html">
+      <svg class="logo-icon" width="132" height="24">
+        <use href="/coursework/symbol-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a
+            aria-label="home"
+            class="nav-link header-nav-link header-nav-link-main"
+            id="homeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a
+            aria-label="favorites"
+            class="nav-link header-nav-link header-nav-link-favorites"
+            id="favoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="social-media-list">
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="open-mobile-menu-btn" type="button" name="Open menu" aria-label="Open menu">
+      <svg class="icon-mobile-nav" width="32" height="32">
+        <use href="/coursework/symbol-defs.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu-wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <button class="close-mobile-menu-btn" type="button" name="close">
+        <svg class="icon-mobile-menu-nav" width="24" height="24">
+          <use href="/coursework/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav>
+      <ul class="mobile-nav-list">
+        <li>
+          <a
+            aria-label="home"
+            class="nav-link active"
+            id="mobileHomeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="favorites"
+            class="nav-link"
+            id="mobileFavoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="mobile-social-media-list">
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <section class="favourite_exercises section">
+  <div class="container">
+    <h2 class="section_title">Favorites</h2>
+    <div class="favorites-container">
+      <div class="quote-container">
+        <div class="quote"></div>
+        <div class="quote-bottom-container">
+          <div class="main-text">
+            <svg width="20" height="20" class="main-text-icon">
+              <use href="/coursework/symbol-defs.svg#icon-gym"></use>
+            </svg>
+            <div>
+              <h3 class="main-text-title">110 min</h3>
+              <p class="main-text-subtitle">Daily norm of sports</p>
+            </div>
+          </div>
+          <div class="image-wrapper">
+          <img
+            src="/coursework/img/favourite-1x.webp"
+            srcset="/coursework/img/favourite-1x.webp 1x, /coursework/img/favourite-2x.webp 2x"
+            alt="women"
+            fetchpriority="high"
+          />
+        </div>
+        </div>
+      </div>
+      <div class="scrollbar_custom">
+        <ul class="fav_card_list"></ul>
+        <ul class="pagination-cards"></ul>
+        <div class="no_cards_wrapper-container visually-hidden">
+          <p class="no_cards_wrapper visually-hidden">
+            It appears that you haven't added any exercises to your favorites
+            yet. To get started, you can add exercises that you like to your
+            favorites for easier access in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <div class="exr-card-backdrop"></div>
+
+
+      <div class="backdrop">
+  <div class="backdrop-container">
+    <button name="close" id="form-close-btn" type="button">
+      <svg class="form-close-btn-icon" width="12" height="12">
+        <use href="/coursework/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <form class="backdrop-form">
+      <p class="backdrop-form-text">Rating</p>
+
+      <div class="rating-wrapper">
+        <p class="rating-star-value">0.0</p>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="1" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="2" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="3" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="4" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="5" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+      </div>
+      <input
+        type="email"
+        placeholder="Email"
+        pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$"
+        name="user-email"
+        id="user-email"
+        title="Enter your email"
+        required
+      />
+      <textarea
+        class="form-user-comment"
+        name="user-comment"
+        id="user-comment"
+        placeholder="Your comment"
+      ></textarea>
+      <button name="send" class="form-send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+    </main>
+
+    <script>
+      window.PAGE = 'favorites';
+    </script>
+  </body>
+</html>

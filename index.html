@@ -1,128 +1,477 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/coursework/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <noscript>
+    </noscript>
+    <script type="module" crossorigin src="/coursework/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/coursework/assets/vendor-Bv82aGDC.js">
+    <link rel="modulepreload" crossorigin href="/coursework/assets/exercises_card-Crdpmkkp.js">
+    <link rel="stylesheet" crossorigin href="/coursework/assets/exercises_card-C1G_fpco.css">
+    <link rel="stylesheet" crossorigin href="/coursework/assets/vendor-DnveWo0P.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header-row">
+    <a aria-label="main" class="logo" href="/coursework/index.html">
+      <svg class="logo-icon" width="132" height="24">
+        <use href="/coursework/symbol-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        <li class="nav-list-item">
+          <a
+            aria-label="home"
+            class="nav-link header-nav-link header-nav-link-main"
+            id="homeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="nav-list-item">
+          <a
+            aria-label="favorites"
+            class="nav-link header-nav-link header-nav-link-favorites"
+            id="favoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
         </li>
       </ul>
     </nav>
+
+    <ul class="social-media-list">
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-media-link"
+        >
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="open-mobile-menu-btn" type="button" name="Open menu" aria-label="Open menu">
+      <svg class="icon-mobile-nav" width="32" height="32">
+        <use href="/coursework/symbol-defs.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+<div class="mobile-menu-wrapper">
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <button class="close-mobile-menu-btn" type="button" name="close">
+        <svg class="icon-mobile-menu-nav" width="24" height="24">
+          <use href="/coursework/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
+    <nav>
+      <ul class="mobile-nav-list">
+        <li>
+          <a
+            aria-label="home"
+            class="nav-link active"
+            id="mobileHomeLink"
+            href="/coursework/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            aria-label="favorites"
+            class="nav-link"
+            id="mobileFavoritesLink"
+            href="/coursework/favorites.html"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="mobile-social-media-list">
+      <li>
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          aria-label="social-media"
+          href="https://www.facebook.com/goITclub/"
           target="_blank"
           rel="noopener noreferrer"
+          class="social-media-link"
         >
-          HTML Inject
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+      <li>
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          aria-label="social-media"
+          href="https://www.instagram.com/goitclub/"
           target="_blank"
           rel="noopener noreferrer"
+          class="social-media-link"
         >
-          Full Reload
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+      <li>
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          aria-label="social-media"
+          href="https://www.youtube.com/c/GoIT"
           target="_blank"
           rel="noopener noreferrer"
+          class="social-media-link"
         >
-          Sort Media Queries
+          <svg width="28" height="28" class="social-media-icon">
+            <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>
   </div>
-</article>
+</div>
+
+
+    <main>
+      <section class="main_section">
+  <div class="container">
+    <div class="main_section_container">
+      <div class="main_text">
+        <div class="span">
+          <svg width="59" height="59" class="h1-icon">
+            <use
+              href="/coursework/symbol-defs.svg#icon-sun"
+            ></use>
+          </svg>
+          <h1>Get Body in shape, Stay healthy</h1>
+        </div>
+        <p class="main_text_p">
+          Transform your physique and embrace a healthier lifestyle with our
+          comprehensive fitness and nutrition support.
+        </p>
+      </div>
+      <div class="main_decoration">
+        <div class="decoration-image-wrapper">
+          <img
+            src="/coursework/img/text-img-1x.webp"
+            srcset="/coursework/img/text-img-1x.webp 1x, /coursework/img/text-img-2x.webp 2x"
+            alt="Fitness text decoration"
+            class="decoration-image"
+            fetchpriority="high"
+          />
+        </div>
+        <ul class="text">
+          <li>#Sport</li>
+          <li>#Healthy</li>
+          <li>#Workout</li>
+          <li>#Diet</li>
+        </ul>
+      </div>
+    </div>
+
+    <picture class="main-image-wrapper">
+      <source
+        media="(max-width: 1439px)"
+        srcset="/coursework/img/main-tablet-1x.webp 1x, /coursework/img/main-tablet-2x.webp 2x"
+      />
+
+      <img
+        src="/coursework/img/main-desctop-1x.webp"
+        srcset="/coursework/img/main-desctop-1x.webp 1x, /coursework/img/main-desctop-2x.webp 2x"
+        alt="Fitness lifestyle"
+        class="main-image desktop"
+        fetchpriority="high"
+      />
+    </picture>
+    <ul class="desctop-hidden">
+      <li>#Sport</li>
+      <li>#Healthy</li>
+      <li>#Workout</li>
+      <li>#Diet</li>
+    </ul>
+  </div>
+</section>
+
+
+      <section class="exercises-section">
+  <div class="container">
+    <div class="filter-search-wrap">
+      <h2 class="exercises-title">Exercises</h2>
+      <div class="filters-div">
+        <form class="search-form" id="search-form">
+          <div class="input-container">
+            <input
+              class="input-form"
+              type="text"
+              name="searchQuery"
+              autocomplete="off"
+              placeholder="Search"
+            />
+            <button name="search" class="search-button" type="submit">
+              <svg width="18" height="18">
+                <use href="/coursework/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <ul class="filters">
+          <li class="filter">
+            <button name="Muscles" class="muscles-btn active-btn" type="button">
+              Muscles
+            </button>
+          </li>
+          <li class="filter">
+            <button
+              name="Body parts"
+              class="bodyparts-btn not-active-btn"
+              type="button"
+            >
+              Body parts
+            </button>
+          </li>
+          <li class="filter">
+            <button
+              name="Equipmen"
+              class="equipment-btn not-active-btn"
+              type="button"
+            >
+              Equipment
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="exercises-container">
+      <div class="quote-container">
+        <div class="quote"></div>
+        <div class="image-wrapper">
+          <img
+            src="/coursework/img/quote-womens-1x.webp"
+            srcset="/coursework/img/quote-womens-1x.webp 1x, /coursework/img/quote-womens-2x.webp 2x"
+            alt="women"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="main-text">
+          <svg width="32" height="32" class="main-text-icon">
+            <use href="/coursework/symbol-defs.svg#icon-gym"></use>
+          </svg>
+          <div>
+            <h3 class="main-text-title">110 min</h3>
+            <p class="main-text-subtitle">Daily norm of sports</p>
+            <p class="main-text-content">
+              The World Health Organization recommends at least 150 minutes of
+              moderate-intensity aerobic physical activity throughout the week
+              for adults aged 18-64. However, what happens if we adjust that
+              number to 110 minutes every day? While it might seem like a high
+              number to hit, dedicating 110 minutes daily to sporting activities
+              may offer unparalleled benefits to physical health, mental
+              well-being, and overall quality of life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="exercises-div">
+        <ul class="exercises"></ul>
+        <ul class="nav-buttons pagination" id="pagination-container"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <div class="exr-card-backdrop"></div>
+
+
+      <div class="backdrop">
+  <div class="backdrop-container">
+    <button name="close" id="form-close-btn" type="button">
+      <svg class="form-close-btn-icon" width="12" height="12">
+        <use href="/coursework/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <form class="backdrop-form">
+      <p class="backdrop-form-text">Rating</p>
+
+      <div class="rating-wrapper">
+        <p class="rating-star-value">0.0</p>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="1" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="2" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="3" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="4" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+        <svg class="rating-star-icons" width="24" height="24">
+          <use data-id="5" href="/coursework/symbol-defs.svg#icon-star"></use>
+        </svg>
+      </div>
+      <input
+        type="email"
+        placeholder="Email"
+        pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$"
+        name="user-email"
+        id="user-email"
+        title="Enter your email"
+        required
+      />
+      <textarea
+        class="form-user-comment"
+        name="user-comment"
+        id="user-comment"
+        placeholder="Your comment"
+      ></textarea>
+      <button name="send" class="form-send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
 
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer-main">
+      <div>
+        <a aria-label="main" class="logo" href="/coursework/index.html">
+          <svg class="logo-icon" width="132" height="24">
+            <use href="/coursework/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="social-media-list">
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="social-media"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-media-link"
+            >
+              <svg width="28" height="28" class="social-media-icon">
+                <use href="/coursework/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-main-group">
+        <h2 class="title-text">Transforming your<span> body</span> shape with us</h2>
+        <form
+          class="footer-subscribe-form"
+          autocomplete="off"
+          id="subscriptionForm"
+        >
+          <label for="footer-input">
+            Subscribe and learn about new exercises!
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="footer-input"
+              id="footer-input"
+            />
+          </label>
+          <button
+            name="send-email"
+            type="submit"
+            class="footer-send-button"
+            disabled
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <ul class="bottom-text-container">
+      <li><p class="bottom-text">Your Energy. All rights reserved.</p></li>
+      <li><p class="bottom-text bottom-text-second">Privacy Policy / Terms of Service</p></li>
+      <li><p class="bottom-text bottom-text-last">©2023</p></li>
+    </ul>
   </div>
 </footer>
 
-
+
+    <script>
+      window.PAGE = 'main';
+    </script>
   </body>
 </html>
